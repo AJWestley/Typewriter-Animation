@@ -10,6 +10,28 @@ def animate(
     temperature: float = 0,
     misspell_prob: float = 0
     ) -> None:
+    '''
+    Params
+    ---------
+    text: str
+    The text to animate.
+    
+    delay: float
+    The base delay between keystrokes.
+    0.1 by default.
+    
+    lengthen_space: float 
+    How much longer to make a space.
+    0.1 by default.
+    
+    temperature: float 
+    The level of variation in the keystroke delay.
+    0 by default.
+    
+    misspell_prob: float 
+    The probability of each word being misspelled.
+    0 by default.
+    '''
     
     # Fixing parameters if they aren't in the right ranges
     delay = max(0, delay)
